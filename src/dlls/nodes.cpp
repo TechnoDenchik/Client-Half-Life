@@ -2657,7 +2657,7 @@ struct tagNodePair
 
 void CGraph::HashInsert(int iSrcNode, int iDestNode, int iKey)
 {
-	struct tagNodePair np;
+	struct tagNodePair np{};
 
 	np.iSrc  = iSrcNode;
 	np.iDest = iDestNode;
@@ -2678,7 +2678,7 @@ void CGraph::HashInsert(int iSrcNode, int iDestNode, int iKey)
 
 void CGraph::HashSearch(int iSrcNode, int iDestNode, int &iKey)
 {
-	struct tagNodePair np;
+	struct tagNodePair np {};
 
 	np.iSrc  = iSrcNode;
 	np.iDest = iDestNode;

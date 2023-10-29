@@ -1645,8 +1645,8 @@ int CChangeLevel::ChangeList( LEVELLIST *pLevelList, int maxList )
 		for ( i = 0; i < count; i++ )
 		{
 			int j, entityCount = 0;
-			CBaseEntity *pEntList[ MAX_ENTITY ];
-			int			 entityFlags[ MAX_ENTITY ];
+			CBaseEntity* pEntList[MAX_ENTITY]{};
+			int			 entityFlags[MAX_ENTITY]{};
 
 			// Follow the linked list of entities in the PVS of the transition landmark
 			edict_t *pent = UTIL_EntitiesInPVS( pLevelList[i].pentLandmark );

@@ -89,18 +89,18 @@ int CGlock::GetItemInfo(ItemInfo *p)
 
 BOOL CGlock::Deploy( )
 {
-	// pev->body = 1;
+	pev->body = 1;
 	return DefaultDeploy( "models/v_9mmhandgun.mdl", "models/p_9mmhandgun.mdl", GLOCK_DRAW, "onehanded", /*UseDecrement() ? 1 : 0*/ 0 );
 }
 
 void CGlock::SecondaryAttack( void )
 {
-	//GlockFire( 0.1, 0.2, FALSE );
+	GlockFire( 0.1, 0.2, FALSE );
 }
 
 void CGlock::PrimaryAttack( void )
 {
-	//GlockFire( 0.01, 0.3, TRUE );
+	GlockFire( 0.01, 0.3, TRUE );
 	if (!(m_pPlayer->m_afButtonPressed & IN_ATTACK))
 		return;
 
