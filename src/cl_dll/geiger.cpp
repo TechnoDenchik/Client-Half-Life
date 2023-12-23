@@ -64,9 +64,9 @@ int CHudGeiger::MsgFunc_Geiger(const char *pszName,  int iSize, void *pbuf)
 int CHudGeiger::Draw (float flTime)
 {
 	int pct;
-	float flvol;
+	float flvol{};
 	int rg[3]{};
-	int i;
+	int i{};
 	
 	if (m_iGeigerRange < 1000 && m_iGeigerRange > 0)
 	{
@@ -163,7 +163,7 @@ int CHudGeiger::Draw (float flTime)
 			i = 2;
 		}
 
-		flvol = (flvol * ((rand() & 127)) / 255) + 0.25; // UTIL_RandomFloat(0.25, 0.5);
+		flvol = (flvol *((rand() & 127)) / 255) + 0.25; // UTIL_RandomFloat(0.25, 0.5);
 
 		if ((rand() & 127) < pct || (rand() & 127) < pct)
 		{

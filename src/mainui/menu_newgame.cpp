@@ -8,6 +8,7 @@
 #include "keydefs.h"
 #include "menu_btnsbmp_table.h"
 #include "menu_strings.h"
+#include "windows.h"
 
 #define ART_BANNER		"gfx/shell/head_newgame"
 

@@ -22,9 +22,10 @@
 
 #define FOG_LIMIT 30000 //LRC - the fogging fog
 #define RGB_YELLOWISH 0x00FFA000 //255,160,0
-#define RGB_REDISH 0x00FF1010 //255,160,0
+#define RGB_REDISH 0x00FF1010 //255,16,16
 #define RGB_GREENISH 0x0000A000 //0,160,0
-
+#define RGB_WHITE 0x00FFFFFF
+#define RGB_LIGHTBLUE 0x0072C5FF //114, 197, 255
 #include "wrect.h"
 #include "cl_dll.h"
 #include "ammo.h"
